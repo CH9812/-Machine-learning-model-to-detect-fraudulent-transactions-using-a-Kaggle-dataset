@@ -39,44 +39,44 @@ To develop and evaluate machine learning models capable of identifying fraudulen
 
 ### Supervised Learning Models
 
-Let's analyze the performance of each model:
+### Let's analyze the performance of each model:
 
-Logistic Regression:
+### Logistic Regression:
 
 
-Accuracy: 0.959 (95.9%)
-Recall: 0.949 (94.9%)
-Precision: 0.969 (96.9%)
-F1-Score: 0.959 (95.9%)
+1 Accuracy: 0.959 (95.9%)
+2 Recall: 0.949 (94.9%)
+3 Precision: 0.969 (96.9%)
+4 F1-Score: 0.959 (95.9%)
 
 The logistic regression model shows strong overall performance with balanced metrics. The high precision (96.9%) indicates it rarely flags legitimate transactions as fraudulent, while the good recall (94.9%) shows it catches most fraudulent transactions.
 
-XGBoost:
+### XGBoost:
 
 
-Accuracy: 0.959 (95.9%)
-Recall: 0.959 (95.9%)
-Precision: 0.959 (95.9%)
-F1-Score: 0.959 (95.9%)
+1 Accuracy: 0.959 (95.9%)
+2 Recall: 0.959 (95.9%)
+3 Precision: 0.959 (95.9%)
+4 F1-Score: 0.959 (95.9%)
 
 XGBoost shows remarkably consistent performance across all metrics at 95.9%. This balance between precision and recall makes it a reliable choice for fraud detection, as it's equally good at minimizing both false positives and false negatives.
 
-Isolation Forest:
+### Isolation Forest:
 
 
-Accuracy: 0.502 (50.2%)
-Recall: 0.004 (0.4%)
-Precision: 1.000 (100%)
-F1-Score: 0.008 (0.8%)
+1.Accuracy: 0.502 (50.2%)
+2.Recall: 0.004 (0.4%)
+3.Precision: 1.000 (100%)
+4.F1-Score: 0.008 (0.8%)
 
-The Isolation Forest shows some interesting patterns:
+### The Isolation Forest shows some interesting patterns:
 
 The perfect precision (100%) means that when it flags a transaction as fraudulent, it's always correct
 However, the very low recall (0.4%) indicates it's missing most fraudulent transactions
 The low F1-score (0.8%) suggests this model is too conservative in its fraud predictions
 The accuracy near 50% indicates performance close to random chance
 
-Key Findings:
+### Key Findings:
 
 The supervised models (Logistic Regression and XGBoost) significantly outperform the unsupervised approach (Isolation Forest) for this dataset
 XGBoost shows the most balanced performance across all metrics
