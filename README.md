@@ -52,7 +52,7 @@ Results Summary
 
 
 ### Logistic Regression:
-
+|-----------|---------------|
  |Accuracy: |0.959 (95.9%)|
  |Recall: |0.949 (94.9%)|
  |Precision: |0.969 (96.9%)|
