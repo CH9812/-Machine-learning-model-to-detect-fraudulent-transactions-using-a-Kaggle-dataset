@@ -41,36 +41,42 @@ To develop and evaluate machine learning models capable of identifying fraudulen
 
 ### Let's analyze the performance of each model:
 
-### Logistic Regression:
+
 
 Results Summary
-ModelAccuracyPrecisionRecallF1-ScoreLogistic Regression0.940.950.930.94XGBoost0.970.980.960.97Isolation Forest0.920.930.910.92
+| Model              | Accuracy | Precision | Recall | F1-Score |
+|-------------------|----------|-----------|---------|-----------|
+| Logistic Regression| 0.95     | 0.96      | 0.94    | 0.95      |
+| XGBoost           | 0.95     | 0.95      | 0.95    | 0.95      |
+| Isolation Forest  | 0.582     | 1.00     | 0.004    | 0.008      |
 
 
-1 Accuracy: 0.959 (95.9%)
-2 Recall: 0.949 (94.9%)
-3 Precision: 0.969 (96.9%)
-4 F1-Score: 0.959 (95.9%)
+### Logistic Regression:
+
+ |Accuracy: |0.959 (95.9%)|
+ |Recall: |0.949 (94.9%)|
+ |Precision: |0.969 (96.9%)|
+ |F1-Score: |0.959 (95.9%)|
 
 The logistic regression model shows strong overall performance with balanced metrics. The high precision (96.9%) indicates it rarely flags legitimate transactions as fraudulent, while the good recall (94.9%) shows it catches most fraudulent transactions.
 
 ### XGBoost:
 
 
-1 Accuracy: 0.959 (95.9%)
-2 Recall: 0.959 (95.9%)
-3 Precision: 0.959 (95.9%)
-4 F1-Score: 0.959 (95.9%)
+| Accuracy: |0.959 (95.9%)|
+| Recall: |0.959 (95.9%)|
+| Precision:| 0.959 (95.9%)|
+|F1-Score: |0.959 (95.9%)|
 
 XGBoost shows remarkably consistent performance across all metrics at 95.9%. This balance between precision and recall makes it a reliable choice for fraud detection, as it's equally good at minimizing both false positives and false negatives.
 
 ### Isolation Forest:
 
 
-1.Accuracy: 0.502 (50.2%)
-2.Recall: 0.004 (0.4%)
-3.Precision: 1.000 (100%)
-4.F1-Score: 0.008 (0.8%)
+|Accuracy: |0.502 (50.2%)|
+|Recall: |0.004 (0.4%)|
+|Precision: |1.000 (100%)|
+|F1-Score:| 0.008 (0.8%)|
 
 ### The Isolation Forest shows some interesting patterns:
 
