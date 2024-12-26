@@ -39,38 +39,49 @@ To develop and evaluate machine learning models capable of identifying fraudulen
 
 ### Supervised Learning Models
 
-#### 1. Logistic Regression (Baseline)
-- Accuracy: 0.94
-- Recall: 0.93
-- Precision: 0.95
-- F1-Score: 0.94
+Let's analyze the performance of each model:
 
-#### 2. XGBoost
-- Accuracy: 0.97
-- Recall: 0.96
-- Precision: 0.98
-- F1-Score: 0.97
+Logistic Regression:
 
-#### 3. Hyperparameter-Tuned XGBoost
-- Key parameters:
-  - Max depth: 3
-  - Learning rate: 0.1
-  - Subsample: 0.8
-  - Colsample_bytree: 0.8
-- Performance metrics:
-  - Accuracy: 0.9912
-  - Precision: 0.9897
-  - Recall: 0.9927
-  - F1-Score: 0.9912
 
-### Unsupervised Learning Model
+Accuracy: 0.959 (95.9%)
+Recall: 0.949 (94.9%)
+Precision: 0.969 (96.9%)
+F1-Score: 0.959 (95.9%)
 
-#### Isolation Forest
-- Accuracy: 0.89
-- Recall: 0.87
-- Precision: 0.91
-- F1-Score: 0.89
-- Anomaly detection effectiveness: 92.3%
+The logistic regression model shows strong overall performance with balanced metrics. The high precision (96.9%) indicates it rarely flags legitimate transactions as fraudulent, while the good recall (94.9%) shows it catches most fraudulent transactions.
+
+XGBoost:
+
+
+Accuracy: 0.959 (95.9%)
+Recall: 0.959 (95.9%)
+Precision: 0.959 (95.9%)
+F1-Score: 0.959 (95.9%)
+
+XGBoost shows remarkably consistent performance across all metrics at 95.9%. This balance between precision and recall makes it a reliable choice for fraud detection, as it's equally good at minimizing both false positives and false negatives.
+
+Isolation Forest:
+
+
+Accuracy: 0.502 (50.2%)
+Recall: 0.004 (0.4%)
+Precision: 1.000 (100%)
+F1-Score: 0.008 (0.8%)
+
+The Isolation Forest shows some interesting patterns:
+
+The perfect precision (100%) means that when it flags a transaction as fraudulent, it's always correct
+However, the very low recall (0.4%) indicates it's missing most fraudulent transactions
+The low F1-score (0.8%) suggests this model is too conservative in its fraud predictions
+The accuracy near 50% indicates performance close to random chance
+
+Key Findings:
+
+The supervised models (Logistic Regression and XGBoost) significantly outperform the unsupervised approach (Isolation Forest) for this dataset
+XGBoost shows the most balanced performance across all metrics
+Logistic Regression performs nearly as well as XGBoost, making it a viable option when interpretability is important
+The Isolation Forest's performance suggests it might need parameter tuning or may not be suitable for this particular dataset
 
 ## 4. Feature Importance Analysis
 
