@@ -43,6 +43,9 @@ To develop and evaluate machine learning models capable of identifying fraudulen
 
 ### Logistic Regression:
 
+Results Summary
+ModelAccuracyPrecisionRecallF1-ScoreLogistic Regression0.940.950.930.94XGBoost0.970.980.960.97Isolation Forest0.920.930.910.92
+
 
 1 Accuracy: 0.959 (95.9%)
 2 Recall: 0.949 (94.9%)
