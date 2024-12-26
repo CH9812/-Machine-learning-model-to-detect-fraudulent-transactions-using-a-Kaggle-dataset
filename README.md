@@ -1,5 +1,8 @@
 # -Machine-learning-model-to-detect-fraudulent-transactions-using-a-Kaggle-dataset
  Machine learning model to detect fraudulent transactions using a Kaggle dataset
+ ### Colab Notebook
+https://colab.research.google.com/drive/1quBQ2fAAsPVRyi10xGywdSCU9de7yvks?usp=sharing
+ 
 # Credit Card Fraud Detection Project Report
 
 ## Executive Summary
